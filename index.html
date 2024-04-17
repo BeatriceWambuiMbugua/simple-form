@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- BoxIcon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple Form</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form>
+        <h1>Simple Form</h1>
+        <div class="input-box">
+          <label for="fullname">Full Name <span class="required">*</span></label>
+          <div class="input-control">
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter your Full Name"
+              required
+            />
+            <i class="bx bxs-user bx-xs"></i>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="email">Email <span class="required">*</span></label>
+          <div class="input-control">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <i class="bx bxs-envelope bx-xs"></i>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="password">Password <span class="required">*</span></label>
+          <div class="input-control">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your Password"
+              required
+            />
+            <i class="bx bxs-lock bx-xs"></i>
+          </div>
+        </div>
+        <div class="checkbox remember-forgot">
+          <label for="remember"
+            >
+            <input type="checkbox" name="remember" id="remember" /> 
+             Remember Me
+            </label
+          >
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button class="btn">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
