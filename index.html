@@ -22,13 +22,15 @@
       <form>
         <h1>Simple Form</h1>
         <div class="input-box">
-          <label for="fullname">Full Name <span class="required">*</span></label>
+          <label for="fullname"
+            >Full Name <span class="required">*</span></label
+          >
           <div class="input-control">
             <input
               type="text"
               name="fullname"
               id="fullname"
-              placeholder="Enter your Full Name"
+              placeholder="Jane Doe"
               required
             />
             <i class="bx bxs-user bx-xs"></i>
@@ -41,10 +43,23 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Enter your Email"
+              placeholder="example@domain.com"
               required
             />
             <i class="bx bxs-envelope bx-xs"></i>
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="telephone"> Phone Number <span class="required">*</span></label>
+          <div class="input-control">
+            <input
+              type="tel"
+              name="telephone"
+              id="telephone"
+              placeholder="+25471234567"
+              required
+            />
+            <i class='bx bxs-phone bx-xs'></i>
           </div>
         </div>
         <div class="input-box">
@@ -54,20 +69,67 @@
               type="password"
               name="password"
               id="password"
-              placeholder="Enter your Password"
+              placeholder="********"
               required
             />
             <i class="bx bxs-lock bx-xs"></i>
           </div>
         </div>
         <div class="checkbox remember-forgot">
-          <label for="remember"
-            >
-            <input type="checkbox" name="remember" id="remember" /> 
-             Remember Me
-            </label
-          >
+          <label for="remember">
+            <input type="checkbox" name="remember" id="remember" />
+            Remember Me
+          </label>
           <a href="#">Forgot Password?</a>
+        </div>
+
+        <div class="radio">
+          <p>How did you hear about us?</p>
+          <!-- website radio -->
+          <label for="website">
+            <input type="radio" name="social-media" id="website"/> 
+            Website
+          </label>
+
+          <!-- Facebook label -->
+          <label for="facebook">
+            <input type="radio" name="social-media" id="facebook" />
+            Facebook
+          </label>
+
+          <!-- Twitter label -->
+          <label for="twitter">
+            <input type="radio" name="social-media" id="twitter" />
+            Twitter
+          </label>
+
+          <!-- Google Label -->
+          <label for="google">
+            <input type="radio" name="social-media" id="google" />
+            Google
+          </label>
+
+          <!-- LinkedIn label  -->
+          <label for="linkedIn">
+            <input type="radio" name="social-media" id="linkedIn" />
+            LinkedIn
+          </label>
+
+          <!-- Instagram label -->
+          <label for="instagram">
+            <input
+              type="radio"
+              name="social-media"
+              id="instagram"
+            />
+            Instagram
+          </label>
+
+          <!-- Other label -->
+          <label for="other">
+            <input type="radio" name="social-media" id="other" /> 
+          Other
+          </label>
         </div>
         <button class="btn">Login</button>
       </form>
